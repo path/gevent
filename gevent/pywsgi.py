@@ -18,7 +18,7 @@ from gevent.hub import GreenletExit
 __all__ = ['WSGIHandler', 'WSGIServer']
 
 
-MAX_REQUEST_LINE = 8192
+MAX_REQUEST_LINE = 65536
 # Weekday and month names for HTTP date/time formatting; always English!
 _WEEKDAYNAME = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 _MONTHNAME = [None,  # Dummy so we can use 1-based month numbers
